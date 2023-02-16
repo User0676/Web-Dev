@@ -1,68 +1,103 @@
-html, body {
-    width: 50%;
-    margin: 0 auto;
-    font-family: Arial, Helvetica, sans-serif;
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    letter-spacing: 1px;
 }
+
+td1{
+    background-color: black;
+    color: gray;
+    font-size: 12px;
+    padding: 1px 50px;
+}
+
 
 
 header{
-    background-color: rgb(34, 34, 34);
-    color: rgb(138, 139, 144);
-    font-size: 18px;
-    font-family: sans-serif;
-    font-weight: lighter;
-    width: 100%;
-    height: 70px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding-left: 20px;
+    margin-bottom: 10px;
 }
-.to-dos {
-    margin-top: 25px;
+
+.osnova{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 44%;
+    margin-bottom: 62px;
 }
-.container h2{
-    
-    
-    font-size: 30px;
-    font-family: sans-serif;
-    font-weight: normal;
+#osnova-submit{
+    background-color: royalblue;
+    color: white;
+    border: none;
+    padding: 6px;
+    border-radius: 3px;
+    margin-left: 9px;
+}
+#osnova-input{
+    width: 75%;
+    padding: 4px;
+    margin-left: 60px;
+}
+#osnova-form{
+    display: flex;
 }
 
 
-#inputField {
-    width: 300px;
-    height: 46px;
-    border-width: 0;
-    border: 1px solid black;
+input{
+    border-radius: 4px;
+    border-width: 1px;
+}
+h1{
+    font-weight: 480;
+}
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.td2{
+    background-color:rgba(0, 0, 0, 0.87);
+    color:grey;
+    font-size:53px;
+    margin: auto;
+
+}
+
+.task-list{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+.task-list-style{
+    border: 1px solid gray;
+    border-bottom: none;
+}
+.task{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid gray;
+    padding: 10px 4px;
+
+}
+
+.text{
+    border: none;
     outline: none;
-    font-size: 25px;
-    vertical-align: middle;
-    border: 1px solid #CCCCCCFF;
-    border-radius: 6px;
-    margin-left: 0%;
-
-
+    appearance: none;
+    margin-left: 14%;
 }
-.container {
-    width: 100%;
-    margin: 100px auto;
-    
-    
+.delete{
+    margin-left: 520px;
 }
-
-#addToDo {
-    height: 50px;
-    width: 50px;
-    border: 1px solid black;
-    vertical-align: middle;
-    font-size: 30px;
+.lineThrough{
+    text-decoration: line-through;
 }
-
-.paragraph-styling {
-    margin: 0;
-    cursor: pointer;
-    font-size: 20px;
+button{
+    background: none;
+    border: none;
 }
-
-

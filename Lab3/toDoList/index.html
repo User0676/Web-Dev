@@ -2,24 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>To do list</title>
     <link rel="stylesheet" href="style.css">
-    <title>To Do List</title>
 </head>
 <body>
-    <header> <h1> To Do List</h1> </header>
-
-    <div class="container">
-    <h2>To Do List</h2>
-    <div class="container2">
-        <input id="inputField" type="text" placeholder=" Enter task" ><button id="addToDo">+</button>
-        <div class="to-dos" id="toDoContainer">
-        </div>
+<header>
+    <div class="td1">
+        <h3 class="td2">ToDo List</h3>
     </div>
-</div>
-    </body>
-    <script src="main.js"></script>
+</header>
+
+<main>
+    <div class="osnova">
+        <h1>ToDoList</h1>
+        <form id="osnova-form">
+            <input type="text" id="osnova-input" placeholder="Enter Task" autocomplete="off">
+            <input type="submit" value="Add" id="osnova-submit">
+        </form>
+    </div>
+    <div class="task-list">
 
 
+    </div>
+</main>
 
+<script src="main.js"></script>
 </body>
 </html>
