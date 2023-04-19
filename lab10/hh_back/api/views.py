@@ -1,7 +1,6 @@
 from django.shortcuts import render
-from .models import Company, Vacancy
+from api.models import Company, Vacancy
 from django.http import JsonResponse, Http404
-
 
 def company_list(request):
     companies = Company.objects.all()
@@ -42,4 +41,6 @@ def company_vl(request, pk):
     vacancies = Vacancy.objects.filter(company=c)
     vacancies_json = [v.to_json() for v in vacancies]
     return JsonResponse(vacancies_json, safe=False)
+
+    
 
